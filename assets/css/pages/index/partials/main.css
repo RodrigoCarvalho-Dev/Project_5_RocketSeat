@@ -1,0 +1,112 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin-inline: auto;
+    padding: 5.6rem 4rem;
+    gap: 3.4rem;
+
+    box-sizing: content-box;
+}
+
+#section_main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 3.4rem;
+}
+
+#section_main h2 {
+    font-size: 3.0rem;
+    color: var(--color_red);
+    font-family: var(--font_serif_bold);
+}
+
+#section_main #ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    color: var(--color_red);
+    font-family: var(--font_serif_bold);  /* para fontes e reconehcimento de fonts font fascia */
+    font-size: 1.8rem; 
+    padding-left: 1.8rem;
+    
+    
+}
+
+
+#section_main #prepare {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.0rem;
+    color: var(--color_red);
+    font-family: var(--font_serif_bold);
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+
+   
+}
+
+#section_main button {
+
+    background-color: var(--color_red);
+    color: var(--color_white);
+    border-radius: 1.0rem;
+    font-size: 1.8rem;
+    font-family: var(--font_serif_bold);
+    border: none;
+    padding: 1.8rem 3.0rem;
+
+}
+
+@media (min-width : 1060px ) {
+
+    body {
+        background: url("../../../../images/pages/index/papelDeParede.svg");
+        background-position: center;
+    }
+
+    main {
+
+        background-color: transparent;
+        
+        flex-direction: row;
+
+        max-width: fit-content;
+
+        padding: 5.0rem 4.0rem;
+
+        gap: 18.0rem;
+    }
+
+    #section_main {
+        max-width: 43.5rem;
+    }
+}
+
+@media (min-width : 1440px ) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin : 0;
+    }
+
+    *
+   
+
+
+}
